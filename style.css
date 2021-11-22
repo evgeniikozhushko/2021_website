@@ -1,0 +1,329 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 0 0 25px 0;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+em {
+    font-weight: 500;
+    font-style: normal;
+}
+
+#container {
+    display: block;
+    margin: 0 auto;
+}
+
+.inner {
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    /* box-shadow: 0px 10px 10px rgba(121, 121, 121, 0.1); */
+    background:#f2f2f2;
+}
+
+#nav .inner {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#nav .logo {
+    display: block;
+    float: left;
+    font-size: 18pt;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+#nav .logo  img {
+    max-width: 80px;
+} 
+
+#nav ul {
+    width: calc(100% / 3);
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul > li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: calc(100% / 3);
+}
+
+#nav ul > li > a {
+    display: block;
+    font-size: .75em;
+    font-weight: 300;
+    color:rgb(70, 70, 70);
+    padding: 15px 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*  hover menu */
+
+#nav ul > li::after {
+    content: "";
+    width: 0%;
+    height: .25px;
+    background:rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#nav ul > li:hover::after {
+    width: 50%;
+}
+
+/* hero section "banner" */
+
+#banner {
+    background: #f2f2f2;
+    letter-spacing: .2rem;
+    background: #f2f2f2 url('Images/Web_McDonald.jpg') top center no-repeat;
+    background-size: cover;
+    height: 1020px;
+}
+
+/* button shadow */
+
+#banner > .hero > a,
+#contact > .inner > .form a {
+    box-shadow: 5px 10px 15px rgba(182, 182, 182, 0.4);
+}
+
+/* button hover */
+
+#banner > .hero > a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: .5px solid black;
+    box-shadow: 5px 10px 15px rgba(205, 205, 205, 0.4);
+}
+
+/* #contact > .inner > .form a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: .5px solid black;
+    box-shadow: 5px 10px 15px rgba(211, 211, 211, 0.4);
+} */
+
+/* contact button hover */
+
+#contact > .inner > form > button:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: .5px solid black;
+    box-shadow: 5px 10px 15px rgba(211, 211, 211, 0.4);
+}
+
+/* our work hover */
+
+#work > .inner > .frame a:hover {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+#banner > .hero {
+    padding: 200px 0 300px 0;
+    text-transform: uppercase;
+}
+
+#banner > .hero > h1 {
+    text-transform: inherit;
+    font-size: 2.5em;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#banner > .hero > h1 em {
+    font-weight: 600;
+    font-style: normal;
+}
+
+#banner > .hero > h2 {
+    text-transform: inherit;
+    font-weight: 300;
+    font-size: 1.25em;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+/* targets  button */
+
+#banner > .hero > a,
+#contact .form a {
+    border-radius: 10px;
+    font-size: 1em;
+    background: black;
+    padding: 7px 20px;
+    color: #f2f2f2;
+    font-weight: 300;
+    text-transform: inherit;
+    margin-top: 15px;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+#solution, 
+#services, 
+#work, 
+#clients, 
+#contact {
+    padding: 100px 0 200px 0;
+}
+
+#services, 
+#work, 
+#clients {
+    background:#f2f2f2;
+}
+
+#solution p {
+    display: block;
+    /* margin: 0 auto; */ 
+    padding: 50px;
+    background:#f2f2f2;
+    line-height: 2em;
+}
+
+.solution_card {
+    border-top: 1px solid #f2f2f2;
+    border-radius: .25em;
+    box-shadow: 5px 10px 20px rgba(244, 244, 244, 0.995);
+}
+
+.half {
+    width: 50%;
+}
+
+#solution > div > div {
+    background:#f2f2f2;
+}
+
+/* services */
+
+#services {
+    background: #f2f2f2 url('images/Web_Temple.png') center center no-repeat;
+    background-size: cover;
+    height: 1020px;
+}
+
+.frame_ser {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc( calc(100% / 3) - 80px);
+    background:white;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.headerspace {
+    height: 300px;
+}
+
+/* #grey {
+    opacity: 0.25;
+} */
+
+.card {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: .25em;
+    box-shadow: 5px 10px 50px rgba(225, 225, 225, 0.975);
+}
+
+.clients .card {
+    width: 100%;
+    padding: 3em;
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 10px 0 20px 0;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+/* contact */
+
+#contact .form label {
+    font-size: 1em;
+    padding: 0 0 10px 0;
+}
+
+#contact .form input,
+#contact .form textarea {
+    display: block;
+    width: 45%;
+    background:#eee;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+#contact .form button {
+    border-radius: 10px;
+    font-size: 1em;
+    background: black;
+    padding: 7px 20px;
+    color: #f2f2f2;
+    font-weight: 300;
+    text-transform: inherit;
+    margin-top: 15px;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
