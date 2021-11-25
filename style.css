@@ -292,6 +292,14 @@ em {
     opacity: 0.25;
 } */
 
+.work-content {
+    display:none;
+}
+
+.show {
+    display:block;
+}
+
 .card {
     border: 1px solid rgb(255, 255, 255);
     border-radius: .25em;
