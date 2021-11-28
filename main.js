@@ -1,8 +1,13 @@
 $(document).ready(function(){
-    $("#work .card").on("click",function(){
-        var showthis = $(this).data("show");
-        $(".work-content").fadeOut(300,function(){
-            $(".work-content").data("content",showthis).fadeIn(300);
+    $("#work .open").click(function(){
+        $(this).css({"width":"100%"});
+        $(this).children(".portfolio-item").slideDown();
+        
+        $(this).removeClass("open").addClass("close");
+        
+        $(".close").click(function(){
+            $(this).children(".portfolio-item").slideUp();
+            $(this).removeClass("close").addClass("open");
         });
     });
 });
